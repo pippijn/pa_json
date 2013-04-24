@@ -1,0 +1,28 @@
+# Target
+Target		= pa_json
+Description	= JSON quotations
+Version		= 0.1
+
+# Sources
+Modules[]	=
+	Jq_ast
+	Jq_parser
+	Jq_quotations
+
+# External dependencies
+Requires[]	=
+	camlp4.extend
+	camlp4.quotations
+
+# Camlp4
+Flags.		=
+  extends $(Map)
+  $|jq_ast.ml|		= -syntax camlp4o
+  $|jq_parser.ml|	= -pp camlp4of
+  $|jq_quotations.ml|	= -pp camlp4of
+
+# Build byte-code version for syntax extensions
+BYTE_ENABLED		= true
+NATIVE_ENABLED		= false
+
+ocaml-library ()
