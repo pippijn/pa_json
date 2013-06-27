@@ -4,19 +4,18 @@ Description	= JSON quotations
 Version		= 0.1
 
 # Sources
-Modules[]	=
+Modules[] =
 	Jq_ast
 	Jq_parser
 	Jq_quotations
 
-# External dependencies
-Requires[]	=
+# Library dependencies
+Requires[] =
 	camlp4.extend
 	camlp4.quotations
 
 # Camlp4
-Flags.		=
-  extends $(Map)
+Flags. +=
   $|jq_ast.ml|		= -syntax camlp4o
   $|jq_parser.ml|	= -pp camlp4of
   $|jq_quotations.ml|	= -pp camlp4of

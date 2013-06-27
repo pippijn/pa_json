@@ -4,7 +4,7 @@ Description	= JSON parsing library
 Version		= 0.1
 
 # Sources
-Modules[]	=
+Modules[] =
 	Basic
 	Lexer
 	Olexer
