@@ -5,14 +5,14 @@ Version		= 0.1
 
 # Sources
 Modules[] =
-	Jq_ast
-	Jq_parser
-	Jq_quotations
+  Jq_ast
+  Jq_parser
+  Jq_quotations
 
 # Library dependencies
-Requires[] =
-	camlp4.extend
-	camlp4.quotations
+OCaml-Requires[] =
+  camlp4.extend
+  camlp4.quotations
 
 # Camlp4
 Flags. +=
@@ -20,8 +20,9 @@ Flags. +=
   $|jq_parser.ml|	= -pp camlp4of
   $|jq_quotations.ml|	= -pp camlp4of
 
-# Build byte-code version for syntax extensions
-BYTE_ENABLED		= true
-NATIVE_ENABLED		= false
+# Only build byte-code version for syntax extensions.
+OCAML_BYTE		= true
+OCAML_NATIVE		= false
+OCAML_PLUGIN		= false
 
-ocaml-library ()
+library (.DEFAULT)

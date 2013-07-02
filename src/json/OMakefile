@@ -5,9 +5,9 @@ Version		= 0.1
 
 # Sources
 Modules[] =
-	Basic
-	Lexer
-	Olexer
-	Parser
+  Basic
+  Lexer
+  Olexer
+  Parser
 
-ocaml-pack ()
+library (.DEFAULT)
