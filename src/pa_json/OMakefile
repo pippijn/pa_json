@@ -1,5 +1,5 @@
 # Target
-Target		= pa_json
+Name		= pa_json
 Description	= JSON quotations
 Version		= 0.1
 
@@ -25,4 +25,4 @@ OCAML_BYTE		= true
 OCAML_NATIVE		= false
 OCAML_PLUGIN		= false
 
-library (.DEFAULT)
+library-install (.DEFAULT)
