@@ -1,0 +1,7 @@
+=head1 pa_json
+
+Pa_json provides Camlp4 quotations for the JSON library Yojson. It supports both
+construction and pattern matching with some useful extensions such as list
+matching.
+
+L<Git repository|https://github.com/pippijn/pa_json>
