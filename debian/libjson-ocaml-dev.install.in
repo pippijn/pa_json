@@ -1,0 +1,3 @@
+@OCamlStdlibDir@/json/*.a
+@OCamlStdlibDir@/json/*.cm[ix]
+@OCamlStdlibDir@/json/*.cmxa

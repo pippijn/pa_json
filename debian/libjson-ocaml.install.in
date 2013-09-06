@@ -1,0 +1,3 @@
+@OCamlStdlibDir@/json/META
+@OCamlStdlibDir@/json/*.cma
+@OCamlStdlibDir@/json/*.cmxs
