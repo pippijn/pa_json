@@ -8,7 +8,6 @@ install Library ".DEFAULT" [
   Modules [
     "Basic";
     "Lexer";
-    "Olexer";
     "Parser";
   ];
 ]
