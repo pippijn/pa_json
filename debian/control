@@ -10,6 +10,7 @@ Build-Depends:
  ocaml-findlib,
  libbaselib-ocaml-dev,
  libsexplib-camlp4-dev,
+ camlp4-extra,
  menhir
 Standards-Version: 3.9.2
 Homepage: https://github.com/pippijn/json
