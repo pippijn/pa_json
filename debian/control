@@ -1,22 +1,19 @@
-Source: ocaml-re2ml
+Source: ocaml-json
 Section: ocaml
 Priority: optional
 Maintainer: Pippijn van Steenhoven <pip88nl@gmail.com>
-Uploaders: 
-  Pippijn van Steenhoven <pip88nl@gmail.com>
 Build-Depends:
-  ocaml-nox (>= 3.12),
-  ocaml-findlib,
-  omake,
-  noweb,
-  libbaselib-ocaml-dev,
-  libsexplib-camlp4-dev,
-  dh-ocaml,
-  debhelper (>= 8.0.0)
+ debhelper (>= 8.0.0),
+ obuild, noweb,
+ dh-ocaml (>= 0.9),
+ ocaml-nox (>= 3.12),
+ ocaml-findlib,
+ libbaselib-ocaml-dev,
+ libsexplib-camlp4-dev
 Standards-Version: 3.9.2
-Homepage: https://github.com/pippijn/re2ml
-Vcs-Git: git://github.com/pippijn/re2ml
-Vcs-Browser: https://github.com/pippijn/re2ml
+Homepage: https://github.com/pippijn/json
+Vcs-Git: git://github.com/pippijn/json
+Vcs-Browser: https://github.com/pippijn/json
 
 Package: libjson-camlp4
 Architecture: any
