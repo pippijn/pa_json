@@ -1,1 +1,2 @@
-@OCamlStdlibDir@/pa_json/*.cm[ix]
+@OCamlStdlibDir@/pa_json/META
+@OCamlStdlibDir@/pa_json/*.cm[aix]

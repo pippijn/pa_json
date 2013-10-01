@@ -17,30 +17,40 @@ Homepage: https://github.com/pippijn/json
 Vcs-Git: git://github.com/pippijn/json
 Vcs-Browser: https://github.com/pippijn/json
 
-Package: libjson-camlp4
-Architecture: any
-Depends: ${ocaml:Depends}, ${misc:Depends}, ${shlibs:Depends}
-Provides: ${ocaml:Provides}
-Description: Fast lexer generator compatible with ocamllex
- Stuff.
-
 Package: libjson-camlp4-dev
 Architecture: any
-Depends: ${ocaml:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Depends:
+ libjson-ocaml-dev,
+ ${ocaml:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends}
 Provides: ${ocaml:Provides}
-Description: Fast lexer generator compatible with ocamllex
- Stuff.
+Recommends: ocaml-findlib
+Description: Common library for OCaml projects
+ This library contains some common modules I use for
+ most of my projects.
 
 Package: libjson-ocaml
 Architecture: any
-Depends: ${ocaml:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Depends:
+ ${ocaml:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends}
 Provides: ${ocaml:Provides}
-Description: Fast lexer generator compatible with ocamllex
- Stuff.
+Description: Common library for OCaml projects
+ This library contains some common modules I use for
+ most of my projects.
+ .
+ This package contains the shared runtime libraries.
 
 Package: libjson-ocaml-dev
 Architecture: any
-Depends: ${ocaml:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Depends:
+ ${ocaml:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends}
 Provides: ${ocaml:Provides}
-Description: Fast lexer generator compatible with ocamllex
- Stuff.
+Recommends: ocaml-findlib
+Description: Common library for OCaml projects
+ This library contains some common modules I use for
+ most of my projects.
