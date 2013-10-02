@@ -26,9 +26,9 @@ Depends:
  ${shlibs:Depends}
 Provides: ${ocaml:Provides}
 Recommends: ocaml-findlib
-Description: Common library for OCaml projects
- This library contains some common modules I use for
- most of my projects.
+Description: JSON quotations for OCaml
+ This syntax extension allows you to write JSON in OCaml code and will
+ produce Yojson data structures.
 
 Package: libjson-ocaml
 Architecture: any
@@ -37,9 +37,8 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends}
 Provides: ${ocaml:Provides}
-Description: Common library for OCaml projects
- This library contains some common modules I use for
- most of my projects.
+Description: JSON parser for OCaml
+ Alternative JSON parser producing Yojson data structures.
  .
  This package contains the shared runtime libraries.
 
@@ -51,6 +50,5 @@ Depends:
  ${shlibs:Depends}
 Provides: ${ocaml:Provides}
 Recommends: ocaml-findlib
-Description: Common library for OCaml projects
- This library contains some common modules I use for
- most of my projects.
+Description: JSON parser for OCaml
+ Alternative JSON parser producing Yojson data structures.
