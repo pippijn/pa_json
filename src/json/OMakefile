@@ -1,0 +1,11 @@
+Name		= json
+Description	= JSON parsing library
+Version		= 0.1
+
+OCaml-Sources[] =
+  Basic
+  Lexer
+  Parser
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)
